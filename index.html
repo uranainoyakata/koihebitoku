@@ -17,7 +17,7 @@
                 linear-gradient(135deg, #1a0a2a 0%, #3a0a4a 100%);
             background-size: 200% 200%, 200% 200%, 200% 200%, cover;
             background-attachment: fixed;
-            animation: backgroundPan 60s linear infinite;
+            animation: backgroundPan 120s linear infinite;
             color: #e0c0ff;
             display: block;
             margin: 0;
@@ -42,14 +42,14 @@
             background-image: radial-gradient(circle, #fff 1px, transparent 1px);
             background-size: 50px 50px;
             opacity: 0.3;
-            animation: twinkle 10s infinite alternate;
+            animation: twinkle 20s infinite alternate;
         }
 
         body::after {
             background-image: radial-gradient(circle, #fff 0.5px, transparent 0.5px);
             background-size: 30px 30px;
             opacity: 0.2;
-            animation: twinkle 15s infinite alternate-reverse;
+            animation: twinkle 30s infinite alternate-reverse;
         }
 
         @keyframes backgroundPan {
@@ -72,7 +72,7 @@
             text-align: center;
             opacity: 0;
             transform: translateY(30px);
-            animation: fadeInSlideUp 1.5s forwards cubic-bezier(0.23, 1, 0.32, 1);
+            animation: fadeInSlideUp 3.0s forwards cubic-bezier(0.23, 1, 0.32, 1);
             border: 1px solid rgba(255, 204, 0, 0.3);
             position: relative;
             z-index: 1;
@@ -85,7 +85,7 @@
             }
         }
         .container.energy-pulse {
-            animation: energyPulse 1.5s infinite alternate, fadeInSlideUp 1.5s forwards cubic-bezier(0.23, 1, 0.32, 1);
+            animation: energyPulse 3.0s infinite alternate, fadeInSlideUp 1.5s forwards cubic-bezier(0.23, 1, 0.32, 1);
         }
         @keyframes energyPulse {
             0% { box-shadow: 0 0 30px rgba(255, 102, 178, 0.3), 0 0 60px rgba(255, 204, 0, 0.2); }
